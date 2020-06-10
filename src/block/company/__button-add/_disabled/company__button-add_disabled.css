@@ -1,0 +1,9 @@
+.company__button-add_disabled {
+  background-color: red;
+  border: 1px solid #f1f1f1;
+  color: #f1f1f1;
+}
+
+.company__button-add_disabled:hover {
+  cursor: default;
+}

@@ -1,0 +1,26 @@
+.company__button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  display: block;
+  /* margin: 30px 101px 0; */
+  padding: 15px 30px;
+  text-align: center;
+  letter-spacing: 3px;
+
+  color: #FFFFFF;
+
+  border: 1px dashed rgb(185, 184, 184);
+  background-color: grey;
+  opacity: 0.7;
+  cursor: url(../../../images/Pointer.png), pointer;
+  outline: none;
+}
+
+.company__button:hover {
+  background-color: rgb(65, 64, 64);
+}
+
+.company__button:active {
+  background: rgb(34, 34, 34);
+}

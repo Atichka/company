@@ -1,0 +1,22 @@
+.company__input {
+  display: block;
+  width: 100%;
+  border: none;
+	border-radius: 2px;
+	border-bottom: 2px solid #ccc;
+	padding: 10px 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.company__input:valid:not(:placeholder-shown) {
+	border-color: #ffdb4d;
+}
+
+.fcompany__input:invalid:not(:placeholder-shown) {
+	border-color: #df4b41;
+}
+
+.company__input:invalid:not(:placeholder-shown) + .company__error {
+	display: block;
+}

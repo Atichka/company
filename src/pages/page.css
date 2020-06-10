@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style:  normal;
+  font-weight: 500;
+  src: url("../vendor/fonts/roboto-medium-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("../vendor/fonts/roboto-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("../vendor/fonts/robotoslab-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  font-style:  normal;
+  font-weight: 900;
+  src: url("../vendor/fonts/roboto-bold.woff") format("woff");
+}
+
+.page {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+@media screen and (max-width: 1440px) {
+  .page {
+      min-width: 1440px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .page {
+      min-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+      min-width: 768px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .page {
+      min-width: 375px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page {
+      min-width: 320px;
+  }
+}

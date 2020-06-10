@@ -1,0 +1,40 @@
+@import url(./__logo/header__logo.css);
+
+.header {
+  max-width: 100%;
+  height: 80px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  border-block-end: 1px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding-right: 59px;
+    padding-left: 59px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-right: 42px;
+    padding-left: 42px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .header {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+}

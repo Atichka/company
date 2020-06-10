@@ -1,0 +1,8 @@
+@import url(./_disabled/company__add_disabled.css);
+
+.company__add {
+  margin-top: 30px;
+  display: block;
+  border: 1px dotted rgb(185, 184, 184);
+  padding: 15px;
+}

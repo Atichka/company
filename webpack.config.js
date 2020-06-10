@@ -76,7 +76,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       template: 'src/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
+      favicon: 'src/images/favicon.ico'
     }),
     new WebpackMd5Hash()
   ]

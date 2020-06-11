@@ -1,5 +1,5 @@
 .comments__container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 100px 100px;
-  gap: 30px;
+  gap: 30px; */
 }

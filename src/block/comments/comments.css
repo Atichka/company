@@ -1,5 +1,6 @@
 @import url(./__container/comments__container.css);
 @import url(./__input/comments__input.css);
+@import url(./__text/comments__text.css);
 
 .comments {
   max-width: 50%;

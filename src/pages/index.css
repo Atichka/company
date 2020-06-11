@@ -1,0 +1,7 @@
+@import url(./page.css);
+@import url(../block/header/header.css);
+@import url(../block/menu/menu.css);
+@import url(../block/company/company.css);
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../block/show-company/show-company.css);

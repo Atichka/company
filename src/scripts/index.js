@@ -1,4 +1,4 @@
-import "./index.css";
+import '../pages/index.css';
 
 class CompanyList {
   constructor(container) {
@@ -18,7 +18,7 @@ class Company {
 
   create(nameValue) {
     const element = document.createRange().createContextualFragment(`<div class="company__item">
-    <h2 class="company__name">${nameValue}</h2>
+    <h2 class="company__name"><a href="./about.html">${nameValue}</a></h2>
     <p class="company__comment">Текст текст</p>
     </div>`)
     return element;

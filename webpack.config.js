@@ -2,15 +2,19 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const webpack = require('webpack');
+
+const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
   entry: {
-    index: './src/index.js',
+    index: './src/scripts/index.js',
+    about: './src/scripts/about.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js'
+    filename: 'scripts/[name].[chunkhash].js'
   },
   module: {
     rules: [
@@ -71,14 +75,29 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: './styles/style.[contenthash].css',
+      filename: './styles/[name].[contenthash].css',
+    }),
+    new OptimizeCssAssetsPlugin({
+      assetNameRegExp: /\.css$/g,
+      cssProcessor: require('cssnano'),
+      cssProcessorPluginOptions: {
+        preset: ['default'],
+      },
+      canPrint: true
     }),
     new HtmlWebpackPlugin({
-      inject: false,
       template: 'src/index.html',
       filename: 'index.html',
       favicon: 'src/images/favicon.ico'
     }),
-    new WebpackMd5Hash()
+    new HtmlWebpackPlugin({
+      template: 'src/about.html',
+      filename: 'about.html',
+      favicon: 'src/images/favicon.ico'
+    }),
+    new WebpackMd5Hash(),
+    new webpack.DefinePlugin({
+      'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+    })
   ]
 };

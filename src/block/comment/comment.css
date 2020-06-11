@@ -1,0 +1,7 @@
+@import url(./__input/comment__input.css);
+@import url(./__add/comment__add.css);
+
+.comment {
+  max-width: 50%;
+  display: block;
+}

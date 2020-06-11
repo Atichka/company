@@ -4,6 +4,8 @@
   max-width: 100%;
   height: 80px;
   margin: 0;
+  padding-right: 101px;
+  padding-left: 101px;
   display: flex;
   align-items: center;
   text-align: center;

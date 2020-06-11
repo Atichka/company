@@ -1,39 +1,33 @@
-@import url(./__container/company__container.css);
-@import url(./__add/company__add.css);
-@import url(./__button/company__button.css);
-@import url(./__add-item/company__add-item.css);
-@import url(./__button-add/company__button-add.css);
-@import url(./__input/company__input.css);
-@import url(./__error/company__error.css);
+@import url(./__name/show-company__name.css);
 
-.company {
+.show-company {
   padding-right: 101px;
   padding-left: 101px;
 }
 
 @media screen and (max-width: 1024px) {
-  .company {
+  .show-company {
     padding-right: 59px;
     padding-left: 59px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .company {
+  .show-company {
     padding-right: 42px;
     padding-left: 42px;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .company {
+  .show-company {
     padding-right: 28px;
     padding-left: 28px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
-  .company {
+  .show-company {
     padding-right: 6px;
     padding-left: 6px;
   }

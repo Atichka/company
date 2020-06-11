@@ -1,0 +1,7 @@
+@import url(./page.css);
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../block/show-company/show-company.css);
+@import url(../block/comment/comment.css);
+@import url(../block/button/button.css);
+@import url(../block/comments/comments.css);

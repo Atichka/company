@@ -3,5 +3,16 @@
 
 .comments {
   max-width: 50%;
+}
 
+@media screen and (max-width: 1024px) {
+  .comments {
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .comments {
+    max-width: 100%;
+  }
 }

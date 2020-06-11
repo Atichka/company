@@ -1,4 +1,5 @@
 @import url(./__name/show-company__name.css);
+@import url(./__text/show-company__text.css);
 
 .show-company {
   padding-right: 101px;

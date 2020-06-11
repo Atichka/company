@@ -1,0 +1,7 @@
+.name__hide {}
+
+@media screen and (max-width: 376px) {
+  .name__hide {
+    display: none;
+  }
+}

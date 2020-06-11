@@ -18,7 +18,7 @@ class Company {
 
   create(nameValue) {
     const element = document.createRange().createContextualFragment(`<div class="company__item">
-    <h2 class="company__name"><a href="./about.html">${nameValue}</a></h2>
+    <h2 class="company__title"><a class="company__name" href="./about.html">${nameValue}</a></h2>
     <p class="company__comment">Текст текст</p>
     </div>`)
     return element;
@@ -32,8 +32,13 @@ const input = document.querySelector('.input');
 const company = new CompanyList(document.querySelector('.company__container'));
 const companyAdd = document.querySelector('.company__button');
 
-buttonSend.addEventListener('click', sendForm);
-companyAdd.addEventListener('click', visibleForm);
+if(buttonSend) {
+  buttonSend.addEventListener('click', sendForm);
+}
+
+if(companyAdd) {
+  companyAdd.addEventListener('click', visibleForm);
+}
 
 function visibleForm () {
   form.classList.toggle('company__add_disabled');
@@ -56,28 +61,4 @@ function sendForm (event) {
     company.addCard(form.elements.name.value);
     clearInput();
   }
-  // const inputs = Array.from(form.elements);
-
-  // inputs.forEach((elem) => {
-  //   if (elem.className == "company__input") {
-  //     if (!elem.value) {
-  //       alert("Поле '" + elem.placeholder + "' не должно быть пустым!");
-  //     }
-  //   }
-  // })
 }
-
-// function checkVal () {
-//   if (input.value!="") {
-//     buttonSend.setAttribute('disabled', '');
-//     buttonSend.classList.add('company__button-add_disabled');
-//     alert("c");
-//   } else {
-//     buttonSend.removeAttribute('disabled');
-//     buttonSend.classList.remove('company__button-add_disabled');
-//   }
-// }
-
-// form.addEventListener('input', checkVal);
-
-// window.addEventListener('load', checkVal);

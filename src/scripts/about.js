@@ -17,7 +17,7 @@ class Comment {
   }
 
   create(nameValue, dateValue) {
-    const element = document.createRange().createContextualFragment(`<div class="company__item">
+    const element = document.createRange().createContextualFragment(`<div class="comments__item">
       <div class="comments__text">
         <h2 class="label">User</h2>
         <h2 class="label data">${date}</h2>

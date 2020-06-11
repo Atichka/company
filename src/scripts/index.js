@@ -19,7 +19,8 @@ class Company {
   create(nameValue) {
     const element = document.createRange().createContextualFragment(`<div class="company__item">
     <h2 class="company__title"><a class="company__name" href="./about.html">${nameValue}</a></h2>
-    <p class="company__comment">Текст текст</p>
+    <p class="company__comment">Текст текст</p><input class="comments__input" name="name" type="text" placeholder="Коментарий" minlength='2' maxlength="100"
+    required />
     </div>`)
     return element;
   }

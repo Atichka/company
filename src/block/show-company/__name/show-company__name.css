@@ -6,3 +6,15 @@
   justify-content: space-between;
   border-block-end: 1px;
 }
+
+@media screen and (max-width: 1024px) {
+  .show-company__name {
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .show-company__name {
+    max-width: 100%;
+  }
+}

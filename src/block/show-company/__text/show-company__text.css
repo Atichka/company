@@ -1,0 +1,6 @@
+.show-company__text {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  align-items: center;
+}

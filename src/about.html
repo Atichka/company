@@ -11,14 +11,18 @@
   <div class="page">
     <section class="show-company">
       <div class="show-company__name">
-        <h2 class="name">Название</h2>
-        <p class="label">company</p>
-        <div class="button">
-          <button class="button__pic">+</button>
-          <button class="button__pic">-</button>
+        <div class="show-company__text">
+          <h2 class="name">Название</h2>
+          <p class="label">company</p>
         </div>
-        <h2 class="name">коментарии</h2>
-        <p class="label">5</p>
+        <div class="button">
+          <button class="button__pic open">+</button>
+          <button class="button__pic close">-</button>
+        </div>
+        <div class="show-company__text">
+          <h2 class="name name__hide">коментарии</h2>
+          <p class="label">5</p>
+        </div>
       </div>
       <form novalidate class="comment" name="comment">
         <h2 class="label">Коментарий</h2>
@@ -29,7 +33,7 @@
         <h2 class="label">Коментарий</h2>
         <div class="comments__container">
           <h2 class="label">User</h2>
-          <h2 class="label">Дата</h2>
+          <h2 class="label data"></h2>
         </div>
         <input class="comments__input" name="name" type="text" placeholder="Коментарий" minlength='2' maxlength="100"
         required />

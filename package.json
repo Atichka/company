@@ -37,7 +37,7 @@
     "pngquant": "3.0.0",
     "postcss-loader": "3.0.0",
     "style-loader": "1.2.1",
-    "webpack": "4.43.0",
+    "webpack": "5.97.1",
     "webpack-cli": "3.3.11",
     "webpack-dev-server": ".11.0",
     "webpack-md5-hash": "0.0.6"
